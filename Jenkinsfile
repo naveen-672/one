@@ -6,11 +6,6 @@ pipeline {
         maven "mymaven"
     }
     stages {
-        stage ("clean workspace") {
-            steps {
-                cleanWorkspace()
-            }
-        }
         stage ("build") {
             steps {
                 mavenBuild()
