@@ -8,11 +8,6 @@ pipeline {
                 cleanWorkspace()
             }
         }
-        stage ("checkout") {
-            steps {
-                checkout("master", "https://github.com/naveen-672/one.git")
-            }
-        }
         stage ("build") {
             steps {
                 mavenBuild()
