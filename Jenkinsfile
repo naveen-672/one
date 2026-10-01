@@ -2,6 +2,9 @@
 
 pipeline {
     agent any
+    tools {
+        maven "mymaven"
+    }
     stages {
         stage ("clean workspace") {
             steps {
